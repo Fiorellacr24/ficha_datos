@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ficha de Datos</title>
+</head>
+<body>
+	<form onsubmit = "return false">
+	<h1>Formulario de datos</h1>
+		<div>
+			<label for="nombre">Ingresa tu Nombre:</label>
+			<input class="impr" id="nombre" type="text" pattern="[A-ZÑa-zñá-ú\s]{1,}" required>
+		</div><br>
+		<div>
+			<label for="apellido">Ingresa tu Apellido:</label>
+			<input class="impr" id="apellido" type="text" pattern="[A-ZÑa-zñá-ú\s]{1,}" required>
+		</div><br>
+		<div>
+			<label for="dni">Ingresa tu DNI:</label>
+			<input class="impr" id="dni" type="tel" pattern="[0-9]{8}" required >
+		</div><br>
+		<div>
+			<label for="direcc">Ingresa tu Dirección:</label>
+			<input class="impr" id="direcc" type="text" required>
+		</div><br>
+		<div>
+			<button type="submit" onclick="mostrarDatos()">Enviar Datos</button>
+			<input type="reset" value="Limpiar">
+		</div>
+	</form>	
+	<div id="mostrar"></div>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
